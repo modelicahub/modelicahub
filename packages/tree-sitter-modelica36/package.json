@@ -1,0 +1,47 @@
+{
+  "name": "@modelicahub/tree-sitter-modelica36",
+  "version": "0.0.0",
+  "dependencies": {
+    "node-addon-api": "^7.1.0",
+    "node-gyp-build": "^4.8.0"
+  },
+  "peerDependencies": {
+    "tree-sitter": "^0.21.0"
+  },
+  "peerDependenciesMeta": {
+    "tree_sitter": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.22.6",
+    "prebuildify": "^6.0.0"
+  },
+  "scripts": {
+    "build": "tree-sitter build",
+    "build-wasm": "tree-sitter build --wasm",
+    "generate": "tree-sitter generate",
+    "install": "node-gyp-build",
+    "playground": "tree-sitter playground",
+    "prebuild": "yarn run generate && prebuildify --napi --strip",
+    "prebuildify": "prebuildify --napi --strip",
+    "prebuild-wasm": "yarn run generate",
+    "preplayground": "yarn run build-wasm"
+  },
+  "main": "bindings/node",
+  "types": "bindings/node",
+  "files": [
+    "grammar.js",
+    "binding.gyp",
+    "prebuilds/**",
+    "bindings/node/*",
+    "queries/*",
+    "src/**"
+  ],
+  "tree-sitter": [
+    {
+      "scope": "source.modelica36",
+      "injection-regex": "^modelica36$"
+    }
+  ]
+}

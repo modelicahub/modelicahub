@@ -1,0 +1,934 @@
+[
+  {
+    "type": "annotationClause",
+    "named": true,
+    "fields": {
+      "classModification": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "classModification",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "arrayConstructor",
+    "named": true,
+    "fields": {
+      "element": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "arrayConstructor",
+            "named": true
+          },
+          {
+            "type": "binaryExpression",
+            "named": true
+          },
+          {
+            "type": "logicalLiteral",
+            "named": true
+          },
+          {
+            "type": "stringLiteral",
+            "named": true
+          },
+          {
+            "type": "unaryExpression",
+            "named": true
+          },
+          {
+            "type": "unsignedIntegerLiteral",
+            "named": true
+          },
+          {
+            "type": "unsignedRealLiteral",
+            "named": true
+          }
+        ]
+      },
+      "forIndex": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "forIndex",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "binaryExpression",
+    "named": true,
+    "fields": {
+      "operand1": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "arrayConstructor",
+            "named": true
+          },
+          {
+            "type": "binaryExpression",
+            "named": true
+          },
+          {
+            "type": "logicalLiteral",
+            "named": true
+          },
+          {
+            "type": "stringLiteral",
+            "named": true
+          },
+          {
+            "type": "unaryExpression",
+            "named": true
+          },
+          {
+            "type": "unsignedIntegerLiteral",
+            "named": true
+          },
+          {
+            "type": "unsignedRealLiteral",
+            "named": true
+          }
+        ]
+      },
+      "operand2": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "arrayConstructor",
+            "named": true
+          },
+          {
+            "type": "binaryExpression",
+            "named": true
+          },
+          {
+            "type": "logicalLiteral",
+            "named": true
+          },
+          {
+            "type": "stringLiteral",
+            "named": true
+          },
+          {
+            "type": "unaryExpression",
+            "named": true
+          },
+          {
+            "type": "unsignedIntegerLiteral",
+            "named": true
+          },
+          {
+            "type": "unsignedRealLiteral",
+            "named": true
+          }
+        ]
+      },
+      "operator": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "+",
+            "named": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "classDefinition",
+    "named": true,
+    "fields": {
+      "classPrefixes": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "classPrefixes",
+            "named": true
+          }
+        ]
+      },
+      "classSpecifier": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "longClassSpecifier",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "classModification",
+    "named": true,
+    "fields": {
+      "argument": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "elementModification",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "classPrefixes",
+    "named": true,
+    "fields": {
+      "block": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "block",
+            "named": false
+          }
+        ]
+      },
+      "class": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "class",
+            "named": false
+          }
+        ]
+      },
+      "model": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "model",
+            "named": false
+          }
+        ]
+      },
+      "package": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "package",
+            "named": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "componentClause",
+    "named": true,
+    "fields": {
+      "componentDeclaration": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "componentDeclaration",
+            "named": true
+          }
+        ]
+      },
+      "typeSpecifier": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "typeSpecifier",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "componentDeclaration",
+    "named": true,
+    "fields": {
+      "annotationClause": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "annotationClause",
+            "named": true
+          }
+        ]
+      },
+      "descriptionString": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "descriptionString",
+            "named": true
+          }
+        ]
+      },
+      "identifier": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "IDENT",
+            "named": true
+          }
+        ]
+      },
+      "modification": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "modification",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "descriptionString",
+    "named": true,
+    "fields": {
+      "value": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "STRING",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "elementList",
+    "named": true,
+    "fields": {
+      "element": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "extendsClause",
+            "named": true
+          },
+          {
+            "type": "namedElement",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "elementModification",
+    "named": true,
+    "fields": {
+      "descriptionString": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "descriptionString",
+            "named": true
+          }
+        ]
+      },
+      "modification": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "modification",
+            "named": true
+          }
+        ]
+      },
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "name",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "extendsClause",
+    "named": true,
+    "fields": {
+      "typeSpecifier": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "typeSpecifier",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "forIndex",
+    "named": true,
+    "fields": {
+      "expression": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "arrayConstructor",
+            "named": true
+          },
+          {
+            "type": "binaryExpression",
+            "named": true
+          },
+          {
+            "type": "logicalLiteral",
+            "named": true
+          },
+          {
+            "type": "stringLiteral",
+            "named": true
+          },
+          {
+            "type": "unaryExpression",
+            "named": true
+          },
+          {
+            "type": "unsignedIntegerLiteral",
+            "named": true
+          },
+          {
+            "type": "unsignedRealLiteral",
+            "named": true
+          }
+        ]
+      },
+      "identifier": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "IDENT",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "logicalLiteral",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "longClassSpecifier",
+    "named": true,
+    "fields": {
+      "annotationClause": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "annotationClause",
+            "named": true
+          }
+        ]
+      },
+      "descriptionString": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "descriptionString",
+            "named": true
+          }
+        ]
+      },
+      "elementList": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "elementList",
+            "named": true
+          }
+        ]
+      },
+      "endIdentifier": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "IDENT",
+            "named": true
+          }
+        ]
+      },
+      "identifier": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "IDENT",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "modification",
+    "named": true,
+    "fields": {
+      "classModification": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "classModification",
+            "named": true
+          }
+        ]
+      },
+      "modificationExpression": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "modificationExpression",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "modificationExpression",
+    "named": true,
+    "fields": {
+      "expression": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "arrayConstructor",
+            "named": true
+          },
+          {
+            "type": "binaryExpression",
+            "named": true
+          },
+          {
+            "type": "logicalLiteral",
+            "named": true
+          },
+          {
+            "type": "stringLiteral",
+            "named": true
+          },
+          {
+            "type": "unaryExpression",
+            "named": true
+          },
+          {
+            "type": "unsignedIntegerLiteral",
+            "named": true
+          },
+          {
+            "type": "unsignedRealLiteral",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "name",
+    "named": true,
+    "fields": {
+      "identifier": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "IDENT",
+            "named": true
+          }
+        ]
+      },
+      "qualifier": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "name",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "namedElement",
+    "named": true,
+    "fields": {
+      "classDefinition": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "classDefinition",
+            "named": true
+          }
+        ]
+      },
+      "componentClause": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "componentClause",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "storedDefinition",
+    "named": true,
+    "fields": {
+      "classDefinition": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "classDefinition",
+            "named": true
+          }
+        ]
+      },
+      "withinClause": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "withinClause",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "BOM",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "stringLiteral",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "STRING",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "typeSpecifier",
+    "named": true,
+    "fields": {
+      "global": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": ".",
+            "named": false
+          }
+        ]
+      },
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "name",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "unaryExpression",
+    "named": true,
+    "fields": {
+      "operand": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "arrayConstructor",
+            "named": true
+          },
+          {
+            "type": "binaryExpression",
+            "named": true
+          },
+          {
+            "type": "logicalLiteral",
+            "named": true
+          },
+          {
+            "type": "stringLiteral",
+            "named": true
+          },
+          {
+            "type": "unaryExpression",
+            "named": true
+          },
+          {
+            "type": "unsignedIntegerLiteral",
+            "named": true
+          },
+          {
+            "type": "unsignedRealLiteral",
+            "named": true
+          }
+        ]
+      },
+      "operator": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "+",
+            "named": false
+          },
+          {
+            "type": "-",
+            "named": false
+          },
+          {
+            "type": "not",
+            "named": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "unsignedIntegerLiteral",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "UNSIGNED_INTEGER",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "unsignedRealLiteral",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "UNSIGNED_REAL",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "withinClause",
+    "named": true,
+    "fields": {
+      "packagePrefixName": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "name",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": "+",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "-",
+    "named": false
+  },
+  {
+    "type": ".",
+    "named": false
+  },
+  {
+    "type": ":=",
+    "named": false
+  },
+  {
+    "type": ";",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": "BOM",
+    "named": true
+  },
+  {
+    "type": "COMMENT",
+    "named": true
+  },
+  {
+    "type": "IDENT",
+    "named": true
+  },
+  {
+    "type": "STRING",
+    "named": true
+  },
+  {
+    "type": "UNSIGNED_INTEGER",
+    "named": true
+  },
+  {
+    "type": "UNSIGNED_REAL",
+    "named": true
+  },
+  {
+    "type": "annotation",
+    "named": false
+  },
+  {
+    "type": "block",
+    "named": false
+  },
+  {
+    "type": "break",
+    "named": false
+  },
+  {
+    "type": "class",
+    "named": false
+  },
+  {
+    "type": "end",
+    "named": false
+  },
+  {
+    "type": "extends",
+    "named": false
+  },
+  {
+    "type": "false",
+    "named": false
+  },
+  {
+    "type": "for",
+    "named": false
+  },
+  {
+    "type": "in",
+    "named": false
+  },
+  {
+    "type": "model",
+    "named": false
+  },
+  {
+    "type": "not",
+    "named": false
+  },
+  {
+    "type": "package",
+    "named": false
+  },
+  {
+    "type": "true",
+    "named": false
+  },
+  {
+    "type": "within",
+    "named": false
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "}",
+    "named": false
+  }
+]
